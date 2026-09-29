@@ -1,0 +1,22 @@
+project:
+  name: protein-design-benchmark
+  version: "0.1"
+
+paths:
+  raw_data: data/raw
+  processed_data: data/processed
+  results: results
+  sequences: results/sequences
+  figures: results/figures
+  tables: results/tables
+
+models:
+  proteinsolver: true
+  proteinmpnn: true
+  esm_if1: true
+  rfdiffusion: false
+
+evaluation:
+  sequence_identity: true
+  sequence_diversity: true
+  structural_similarity: true
